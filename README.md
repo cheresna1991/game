@@ -22,4 +22,6 @@ SIGNAL_WATCH(object, "signal_name") - Starts watching the specified signal on th
 SIGNAL_CHECK("signal_name", Vector<Vector<Variant>>) - Checks the arguments of all fired signals. The outer vector contains each fired signal, while the inner vector contains the list of arguments for that signal. The order of signals is significant.
 SIGNAL_CHECK_FALSE("signal_name") - Checks if the specified signal was not fired.
 
+```
 ./bin/<godot_binary> --test
+```
