@@ -14,13 +14,13 @@ namespace TestString { // namespace TestString
 
 #endif // TEST_STRING_H
 ```
-MESSAGE - Prints a message.
-FAIL_CHECK - Marks the test as failing, but continue the execution. Can be wrapped in conditionals for complex checks.
-FAIL - Fails the test immediately. Can be wrapped in conditionals for complex checks.
+<lu>MESSAGE - Prints a message.</lu>
+<lu>FAIL_CHECK - Marks the test as failing, but continue the execution. Can be wrapped in conditionals for complex checks.</lu>
+<lu>FAIL - Fails the test immediately. Can be wrapped in conditionals for complex checks.</lu>
 
-SIGNAL_WATCH(object, "signal_name") - Starts watching the specified signal on the given object.
-SIGNAL_CHECK("signal_name", Vector<Vector<Variant>>) - Checks the arguments of all fired signals. The outer vector contains each fired signal, while the inner vector contains the list of arguments for that signal. The order of signals is significant.
-SIGNAL_CHECK_FALSE("signal_name") - Checks if the specified signal was not fired.
+<lu>SIGNAL_WATCH(object, "signal_name") - Starts watching the specified signal on the given object.</lu>
+<lu>SIGNAL_CHECK("signal_name", Vector<Vector<Variant>>) - Checks the arguments of all fired signals. The outer vector contains each fired signal, while the inner vector contains the list of arguments for that signal. The order of signals is significant.</lu>
+<lu>SIGNAL_CHECK_FALSE("signal_name") - Checks if the specified signal was not fired.</lu>
 
 ```
 ./bin/<godot_binary> --test
