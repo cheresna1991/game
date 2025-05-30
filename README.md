@@ -1,6 +1,7 @@
 Godot Engine allows to write unit tests directly in C++.
 https://github.com/doctest/doctest
-'''c++
+
+'''cpp
 #ifndef TEST_STRING_H
 #define TEST_STRING_H
 
