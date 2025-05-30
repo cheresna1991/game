@@ -1,0 +1,29 @@
+Godot Engine allows to write unit tests directly in C++.
+https://github.com/doctest/doctest
+'''
+#ifndef TEST_STRING_H
+#define TEST_STRING_H
+
+#include "tests/test_macros.h"
+
+namespace TestString {
+
+TEST_CASE("[String] Hello World!") {
+	String hello = "Hello World!";
+	CHECK(hello == "Hello World!");
+}
+
+} // namespace TestString
+
+#endif // TEST_STRING_H
+'''
+
+MESSAGE - Prints a message.
+FAIL_CHECK - Marks the test as failing, but continue the execution. Can be wrapped in conditionals for complex checks.
+FAIL - Fails the test immediately. Can be wrapped in conditionals for complex checks.
+
+SIGNAL_WATCH(object, "signal_name") - Starts watching the specified signal on the given object.
+SIGNAL_CHECK("signal_name", Vector<Vector<Variant>>) - Checks the arguments of all fired signals. The outer vector contains each fired signal, while the inner vector contains the list of arguments for that signal. The order of signals is significant.
+SIGNAL_CHECK_FALSE("signal_name") - Checks if the specified signal was not fired.
+
+./bin/<godot_binary> --test
