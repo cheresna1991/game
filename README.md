@@ -1,7 +1,6 @@
 Godot Engine allows to write unit tests directly in C++.
 https://github.com/doctest/doctest
-
-'''cpp
+```cpp
 #ifndef TEST_STRING_H
 #define TEST_STRING_H
 
@@ -17,19 +16,7 @@ TEST_CASE("[String] Hello World!") {
 } // namespace TestString
 
 #endif // TEST_STRING_H
-'''
-
-```cpp
-int main() {
-  int y = SOME_MACRO_REFERENCE;
-  int x = 5 + 6;
-  cout << "Hello World! " << x << std::endl();
-}
 ```
-
-
-
-
 MESSAGE - Prints a message.
 FAIL_CHECK - Marks the test as failing, but continue the execution. Can be wrapped in conditionals for complex checks.
 FAIL - Fails the test immediately. Can be wrapped in conditionals for complex checks.
