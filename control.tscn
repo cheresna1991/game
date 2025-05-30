@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwtuo6h373edu"]
+
+[ext_resource type="Script" uid="uid://cutll0ptkmqlc" path="res://control.gd" id="1_a6equ"]
+[ext_resource type="Texture2D" uid="uid://chnii8ip1nqab" path="res://art/Background/photo_2024-02-20_16-47-49.jpg" id="2_oqq1e"]
+[ext_resource type="Script" uid="uid://dhqjabgca0bft" path="res://maps/camera_2d.gd" id="3_oqq1e"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a6equ")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_oqq1e")
+expand_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 500.0
+offset_top = 291.0
+offset_right = -452.0
+offset_bottom = -291.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="start" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "start"
+
+[node name="exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "exit"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1)
+anchor_mode = 0
+script = ExtResource("3_oqq1e")
