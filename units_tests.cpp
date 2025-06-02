@@ -66,7 +66,7 @@ int random(int n) {
     return n + m;
 }
 
-TEST_CASE("проверка_что_неотрицаетельное_и_тд") {
+TEST_CASE("проверка_что_неотрицаетельное") {
     CHECK(random(100) <= 110);
     CHECK(nedocrit(-55) >= 0);
 }
@@ -80,7 +80,7 @@ bool is_alive(int player_health, int damage) {
     }
 }
 
-TEST_CASE("soset_li_hui") {
+TEST_CASE("is_alive_test") {
     CHECK(is_alive(10, 50) == false);
     CHECK(is_alive(50, 10) == true);
 }
